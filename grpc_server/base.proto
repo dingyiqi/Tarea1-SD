@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+message Data {
+ string ciudad = 1;
+ float temperatura = 2;
+}
+
+service Search {
+ rpc GetData(Message) returns (Result) {}
+}
+
+message Message {
+ string message = 1;
+}
+
+message Result {
+  repeated Data data = 1;
+}
