@@ -1,5 +1,0 @@
-.dockerignore
-Dockerfile
-go.mod
-go.sum
-node_modules/
